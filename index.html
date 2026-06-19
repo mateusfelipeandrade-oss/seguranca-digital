@@ -9,9 +9,28 @@
 <body> <!-- Área visível da página -->
     <main class="caixa">
         <h1>GERADOR DE SENHA AUTOMÁTICO</h1>
-        <input type="text" placeholder="senha segura" readonly>
+        
+        <input type="text" id="senha" placeholder="senha segura" readonly>
         <input type="number" id="quantidade" value="8"  min="1">
-        <label></label>
+        <label>
+            <input type="checkbox" id="minusculas" checked>
+            LETRAS MINUSCÚLAS
+        </label>
+        <label>
+            <input type="checkbox" id="maiusculas" checked>
+            LETRAS MAIÚSCULAS
+        </label>
+        <label>
+            <input type="checkbox" id="numeros" checked>
+            NÚMEROS
+        </label>
+        <label>
+            <input type="checkbox" id="especiais" checked>
+            CARACTERES ESPECIAIS
+        </label>
+        <button onclick="criarSenha()">CRIAR SENHA</button>
+        <button onclick="limparSenha()">LIMPAR</button>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
