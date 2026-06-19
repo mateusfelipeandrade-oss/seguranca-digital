@@ -1,11 +1,17 @@
-<!DOCTYPE html>
-<html lang=pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!DOCTYPE html> <!-- Informa que o documento usa HTML5 -->
+<html lang="pt-BR"> <!-- Início do HTML com idioma português do Brasil -->
+<head> <!-- Área de configuração da página -->
+    <meta charset="UTF-8"> <!-- Permite usar acentos e caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a página para celular -->
+    <title>Gerador de Senha</title> <!-- Título da aba do navegador -->
+    <link rel="stylesheet" href="estilo.css"> <!-- Liga o HTML ao arquivo CSS -->
 </head>
-<body>
-    
+<body> <!-- Área visível da página -->
+    <main class="caixa">
+        <h1>GERADOR DE SENHA AUTOMÁTICO</h1>
+        <input type="text" placeholder="senha segura" readonly>
+        <input type="number" id="quantidade" value="8"  min="1">
+        <label></label>
+    </main>
 </body>
 </html>
